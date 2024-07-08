@@ -288,7 +288,7 @@ main(int argc, char** argv)
         // change thread sleep duration to increase/decrease the ASDU sending rate 10ms = 4000 IO/s, 100ms = 400 IO/s, etc...
         // reminder: the ASDU max size is 255 bits, which makes 40 IO of type MeasuredValueScaled per ASDU
         
-        Thread_sleep(66);
+        Thread_sleep(130);
 
         CS101_ASDU newAsdu = CS101_ASDU_create(alParams, false, CS101_COT_PERIODIC, 0, 1, false, false);
         InformationObject io = (InformationObject) MeasuredValueScaled_create(NULL, 110, scaledValue, IEC60870_QUALITY_GOOD);
