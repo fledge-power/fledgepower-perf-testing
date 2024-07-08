@@ -1,7 +1,7 @@
 # Tested on Docker Compose version v2.27.1 and Docker version 20.10.18
 services:
   iec104server:
-    image: "ghcr.io/fledge-power/fledgepower/fledge:latest"
+    image: "ghcr.io/fledge-power/fledgepower/cs104server:latest"
     deploy:
        replicas: 152
     ports:
